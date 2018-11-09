@@ -1,4 +1,4 @@
-A web application to navigate the tenure review process.
+A web application to determine body type.
 
 
 ##### Build Tool
@@ -12,7 +12,7 @@ You'll need a Java JDK to build and run the project (version 1.8).
 The files for the project are kept in a code repository,
 available from here:
 
-https://github.com/universityofhawaii/uh-its-tenure
+git@github.com:cahana/izu-app.git
 
 ##### Building
 Install the necessary project dependencies:
