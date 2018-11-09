@@ -34,6 +34,8 @@ To build a deployable war file for local development, if preferred:
 You should have a deployable war file in the target directory.
 Deploy as usual in a servlet container, e.g. tomcat.
 
+Access the application at http://localhost:8080/izu
+
 ##### Running Unit Tests
 The project includes Unit Tests for various parts of the system.
 For this project, Unit Tests are defined as those tests that will
