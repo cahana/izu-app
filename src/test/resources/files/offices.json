@@ -1,0 +1,158 @@
+[
+  {
+    "id": 1,
+    "campusId": 1,
+    "description": "Chancellors Office",
+    "sortId": 1,
+    "campus": {
+      "id": 1,
+      "code": "HA",
+      "description": "Hawaii Community College",
+      "actual": "Y"
+    },
+    "longDescription": "Hawaii Community College: Chancellors Office"
+  },
+  {
+    "id": 3,
+    "campusId": 3,
+    "description": "Chancellors Office",
+    "sortId": 2,
+    "campus": {
+      "id": 3,
+      "code": "HO",
+      "description": "Honolulu Community College",
+      "actual": "Y"
+    },
+    "longDescription": "Honolulu Community College: Chancellors Office"
+  },
+  {
+    "id": 4,
+    "campusId": 4,
+    "description": "Chancellors Office",
+    "sortId": 3,
+    "campus": {
+      "id": 4,
+      "code": "KA",
+      "description": "Kapiolani Community College",
+      "actual": "Y"
+    },
+    "longDescription": "Kapiolani Community College: Chancellors Office"
+  },
+  {
+    "id": 5,
+    "campusId": 5,
+    "description": "Chancellors Office",
+    "sortId": 4,
+    "campus": {
+      "id": 5,
+      "code": "KU",
+      "description": "Kauai Community College",
+      "actual": "Y"
+    },
+    "longDescription": "Kauai Community College: Chancellors Office"
+  },
+  {
+    "id": 6,
+    "campusId": 6,
+    "description": "Chancellors Office",
+    "sortId": 5,
+    "campus": {
+      "id": 6,
+      "code": "LE",
+      "description": "Leeward Community College",
+      "actual": "Y"
+    },
+    "longDescription": "Leeward Community College: Chancellors Office"
+  },
+  {
+    "id": 9,
+    "campusId": 9,
+    "description": "Chancellors Office",
+    "sortId": 6,
+    "campus": {
+      "id": 9,
+      "code": "WI",
+      "description": "Windward Community College",
+      "actual": "Y"
+    },
+    "longDescription": "Windward Community College: Chancellors Office"
+  },
+  {
+    "id": 2,
+    "campusId": 2,
+    "description": "Chancellors Office",
+    "sortId": 7,
+    "campus": {
+      "id": 2,
+      "code": "HI",
+      "description": "UH Hilo",
+      "actual": "Y"
+    },
+    "longDescription": "UH Hilo: Chancellors Office"
+  },
+  {
+    "id": 7,
+    "campusId": 7,
+    "description": "Chancellors Office",
+    "sortId": 8,
+    "campus": {
+      "id": 7,
+      "code": "MA",
+      "description": "UH Manoa",
+      "actual": "Y"
+    },
+    "longDescription": "UH Manoa: Chancellors Office"
+  },
+  {
+    "id": 8,
+    "campusId": 8,
+    "description": "Chancellors Office",
+    "sortId": 9,
+    "campus": {
+      "id": 8,
+      "code": "MU",
+      "description": "UH Maui College",
+      "actual": "Y"
+    },
+    "longDescription": "UH Maui College: Chancellors Office"
+  },
+  {
+    "id": 10,
+    "campusId": 10,
+    "description": "Chancellors Office",
+    "sortId": 10,
+    "campus": {
+      "id": 10,
+      "code": "WO",
+      "description": "UH West Oahu",
+      "actual": "Y"
+    },
+    "longDescription": "UH West Oahu: Chancellors Office"
+  },
+  {
+    "id": 11,
+    "campusId": 11,
+    "description": "Information Technology Services",
+    "sortId": 11,
+    "campus": {
+      "id": 11,
+      "code": "SW",
+      "description": "UH System",
+      "actual": "Y"
+    },
+    "longDescription": "UH System: Information Technology Services"
+  },
+  {
+    "id": 12,
+    "campusId": 11,
+    "description": "Vice President for Community Colleges",
+    "sortId": 12,
+    "campus": {
+      "id": 11,
+      "code": "SW",
+      "description": "UH System",
+      "actual": "Y"
+    },
+    "longDescription": "UH System: Vice President for Community Colleges"
+  }
+]

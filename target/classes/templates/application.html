@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head th:replace="header :: copy"></head>
+
+<body ng-app="tenureApp">
+<script th:inline="javascript">
+/*<![CDATA[*/
+    var isCoordinator = [[${user.hasRole('COORDINATOR')}]];
+    var applicationx = [[${applicationx}]];
+/*]]>*/
+</script>
+    <!-- Navigation -->
+    <nav th:replace="menubar :: copy"></nav>
+    <div th:replace="statusbar :: copy"></div>
+    <div class="container">
+        <div id="main">
+
+            <div id="space">
+                <ul class="nav nav-tabs nav-justified text-left">
+                    <li class="active"><a data-toggle="pill" href="#application-form" id="application-form-tab" >Eligibility</a></li>
+                    <li><a data-toggle="pill" href="#dossier-attachments" id="dossier-attachments-tab">Dossier</a></li>
+                    <li sec:authorize="hasRole('COORDINATOR')"><a data-toggle="pill" href="#reviewers" id="reviewers-tab" >Committees</a></li>
+                    <li><a data-toggle="pill" href="#exclusions" id="exclusions-tab" >Exclusions</a></li>
+                    <li th:if="${showReviewPage}"><a data-toggle="pill" href="#recommendation" id="recommendation-tab">Review Status</a></li>
+               </ul>
+            </div>
+
+            <div class="tab-content">
+                <!-- Bootstrap tab-panel fade Details form -->
+                <div id="application-form" class="tab-pane fade in active">
+                    <div th:replace="application-detail :: copy"></div>
+                </div>
+                <!-- End Bootstrap tab-panel fade Details Form -->
+
+                <!-- Bootstrap tab-panel fade Dossier/Attachments -->
+                <div id="dossier-attachments" class="tab-pane fade">
+                    <div th:replace="${dossierFile != null ? dossierFile : 'application/dossier/dossier-static'} :: copy"></div>
+                </div>
+                <!-- End Bootstrap tab-panel fade Dossier/Attachments -->
+
+                 <!-- Bootstrap tab-panel fade Manage-Committees -->
+                <div id="reviewers" class="tab-pane fade" sec:authorize="hasRole('COORDINATOR')" >
+                    <div th:replace="application/committee/view :: copy"></div>
+                </div>
+                <!-- End Bootstrap tab-panel fade Manage Committees -->
+
+                <!-- Bootstrap tab-panel fade Exclusion form. -->
+                <div id="exclusions" class="tab-pane fade">
+                    <div th:replace="application/exclusion/view :: copy"></div>
+                </div>
+                <!-- End Bootstrap tab-panel fade Exclusion form. -->
+
+                <div id="recommendation" class="tab-pane fade" th:if="${showReviewPage}" >
+                    <div th:replace="review/recommendation-viewer :: copy"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div th:replace="footer :: copy"></div>
+
+</body>
+</html>

@@ -1,0 +1,952 @@
+@import url('font.css');
+
+/* -------------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+    overflow-y:scroll;
+}
+body {
+    padding-top: 110px;
+    padding-bottom: 50px;    
+    background-color: white;
+}
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin-top:auto;
+}
+
+h3 {
+   color: #BD9319;
+}
+a {
+    color: #0275d8;
+    text-decoration: none;
+}
+a:hover {
+    color: #0275d8;
+    text-decoration: underline;
+}
+
+/* ----------------------------------------------------- */
+#tbtn.btn-default:hover, 
+#tbtn.btn-default:focus, 
+#tbtn.btn-default:active, 
+#tbtn.btn-default.active {
+    color: white;
+    background-color: #185182;
+    border-color: #285e8e;
+}
+/* ----------------------------------------------------- */
+
+.tnp-icon-padding {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.text-nowrap {
+    white-space: nowrap;
+}
+.min-padding {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+br.min-padding {
+   display: block;
+   margin: 1px 0;
+}
+.navbar {
+    background-color: white;
+}
+.navbar-fixed-top .nav {
+    padding-top: 40px;
+    padding-bottom: 0px;
+    margin-top: -5px;
+    padding-left: 0px;
+    padding-right: 20px;
+    background-color: white;
+}
+.navbar-fixed-top .navbar-brand {
+    padding-left: 20px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    min-height: 50px;
+    min-width: 50px;
+}
+.navbar-fixed-top .navbar-brand > img {
+    position: inherit;
+    background-color: transparent;
+    top: 0px;
+    left: 25px;    
+    height: 90px;
+    /* min-height: 90px; */
+    width: 90px;
+    /* min-width: 90px; */
+}
+
+.navbar-brand.uh-nav-app-name {
+    height: 30px;
+    width: auto;
+    padding-left: 15px;
+    padding-top: 20px;
+    color: #BD9319;
+    background-color: transparent;
+    font-family: alegreyasans-regular, opensans-regular, serif;
+    font-weight: normal;
+    font-size: 20px;
+}
+.navbar-brand.uh-nav-app-name {
+    position: inherit;
+    top: 0px;
+    left: 115px;
+    padding-left: 18px;
+    padding-top: 52px;
+    white-space: nowrap;
+    text-align: left;
+    font-size: 28px;
+    background-color: transparent;
+}
+
+.navbar-brand.uh-nav-app-name:hover {
+    color: #b08a17;
+}
+.dropshadow {
+    text-shadow: 1px 1px 3px rgba(150, 150, 150, 1);
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+    color: #555;
+    background-color: white;
+}
+.amp {
+    font-family: alice-regular, alegreyasans-regular, opensans-regular, serif;
+    font-weight: normal;
+    font-size: 90%;
+}
+.jumbotron {
+    text-align: center;
+    border: 1px solid #e5e5e5;
+    background-color: #f5f8ff;   
+}
+.jumbotron .btn {
+    padding: 14px 24px;
+    font-size: 21px;
+}
+.container .jumbotron.compacted,
+.container-fluid .jumbotron.compacted {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.container .jumbotron.semi-compacted,
+.container-fluid .jumbotron.semi-compacted {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: inherit;
+  vertical-align: middle;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+div .panel > .panel-heading {
+    background-color: #f5f8ff;    
+}
+
+#maintab.panel {
+    border-color:  #185182;
+
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+#maintab.panel.maintab-subpanel > .panel-heading {
+    background-color: #185182;
+
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+#eligibility-tab.panel-body {
+    background-color: white;
+}
+#eligibility-tab.panel-body .well.well-sm {
+    background-color: #f5f8ff; 
+    padding-top: 1.2em;
+    padding-bottom: 0.2em;
+}
+#recommendation-tab.panel-body .well.well-sm {
+    background-color: #f5f8ff;
+    padding-top: 1.2em;
+    padding-bottom: 0.2em;
+}
+.nav-tabs.nav-justified > li > a {
+    color: #777;
+    background-color: #f5f8ff;
+    border-top-color: #e5e5e5;
+    border-right-color: #e5e5e5;
+    border-left-color: #e5e5e5;
+}
+.nav-tabs.nav-justified > .active > a,
+.nav-tabs.nav-justified > .active > a:focus,
+.nav-tabs.nav-justified > .active > a:hover {
+    background-color: #185182;
+    color: white;
+    border-bottom-color: #185182;
+    border-left-color: #185182;
+    border-right-color: #185182;
+}
+.panel-heading .panel-title.app-types {
+    text-align: left;
+    vertical-align: text-bottom;
+    margin-top: 6px;
+    font-weight: bold;
+}
+.lead.lead-medium {
+    font-size: 16px;
+}
+.marketing {
+    margin: 40px 0;
+}
+.marketing div p.h4 {
+    margin-bottom: 5px;
+}
+.no-margin-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+input.form-control.full-width {
+    width: 100%;
+}
+button.redify-link {
+    color: red
+}
+button.blueable-link {
+    color: #0275d8;
+}
+.glyphicon.app-color {
+    color: #337ab7;
+}
+.pinkify {
+    background-color: pink;
+}
+.orangeify {
+    background-color: orange;
+}
+.greenify {
+    background-color: lightgreen;
+}
+.goldify {
+    background-color: gold;
+}
+.aquafy {
+    background-color: aqua;
+}
+.yellowify {
+    background-color: #ffff66;
+}
+.whiteify {
+    background-color: white;
+}
+.warning-background {
+    background-color: orange;
+}
+.background-transparent {
+    background-color: transparent !important;
+}
+input[readonly].tnpreadonly {
+  background-color: transparent;
+}
+input[readonly].tnpwarning {
+  background-color: #ffcccc;
+}
+input[readonly].tnp-readonly {
+  background-color: transparent;
+}
+input[readonly].tnp-readonly-tinted {
+  background-color: #f5f8ff;
+}
+
+textarea[readonly].tnp-readonly-tinted {
+  background-color: #f5f8ff;
+  resize: none;
+}
+
+textarea[required].tnp-required-input {
+  background-color: transparent;
+  resize: none;
+}
+
+
+.panel-heading a:after {
+    color: white;
+    background-color: white;
+}
+.panel-heading a.collapsed:after {
+    color: white;
+    background-color: white;
+}
+.glyphicon.glyphicon-question-sign {
+    font-size: 17px;
+}
+.gdrive img {
+   margin-left: 5px;
+   height: 1.3em;
+   width: 1.3em;
+}
+.panel-title a {
+    color: white;
+    text-decoration: none;
+}
+.panel-title a:hover {
+    color: white;
+    text-decoration: none;
+}
+/* modal extension for exclusion add */
+.extend .modal-dialog {
+    width: 1200px;
+}
+.modal-open {
+    padding-right: 0px !important;
+}
+
+.alert.tnp-alert-thin {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+/* JqueryUI datepicker z-index fix */
+
+.uib-datepicker-popup.dropdown-menu{z-index: 99 !important};
+.ui-datepicker{z-index: 99 !important};
+
+/* Application CSS */
+
+#application-form {
+    width: 100%;
+    margin-top: 0px;
+    padding-bottom: 10px;
+}
+#main {
+  float: left;
+  padding-top: 0px;
+  width: 100%;
+}
+#shadow {
+    margin-top: -10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color: #185182;
+}
+
+#append {
+    width: 80%;
+    padding: 2px;
+    margin: .5em;
+}
+
+.dossier-empty {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover,.nav-pills > li > a:hover {
+    text-decoration: none;
+    color: #FFF !important;
+    background-color: transparent !important;
+    border-bottom-color: #FFF;
+    -webkit-transition: border-bottom-color .5s ease;
+    -moz-transition: border-bottom-color .5s ease;
+    -o-transition: border-bottom-color .5s ease;
+    -ms-transition: border-bottom-color .5s ease;
+    transition: border-bottom-color .5s ease;
+}
+.nav-pills > li > a {
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+    border-radius:0px;
+    font-size: 1em;
+    margin: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: #fff;
+}
+.absolute-bottom {
+    position: absolute;
+    bottom: 100px;
+}
+.background-color {
+    background-color: #f2f2f2;
+}
+.table>thead>tr>th {
+    border-bottom: none;
+}
+/* filter icon style */
+.inner-addon {
+    position: relative;
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1.25em;
+  color: #999;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 15px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+/* radio btn style */
+
+
+/* -------------------------------------------------------- */
+/* enable absolute positioning */
+.inner-addon-tn {
+  position: relative;
+}
+
+/* style glyph */
+.inner-addon-tn .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align glyph */
+.left-addon-tn .glyphicon  { left:  0px;}
+.right-addon-tn .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon-tn input  { padding-left:  30px; }
+.right-addon-tn input { padding-right: 30px; }
+/* -------------------------------------------------------- */
+
+#tico.fa-flag:hover {
+    color: yellow;
+}
+
+fieldset.btn span {
+  font-size: 1.5em ;
+}
+fieldset input[type="radio"] {
+    display: none;
+}
+fieldset input[type="radio"] ~ i.fa.fa-circle-o{
+    color: #c8c8c8;    display: inline;
+}
+fieldset input[type="radio"] ~ i.fa.fa-dot-circle-o{
+    display: none;
+}
+fieldset input[type="radio"]:checked ~ i.fa.fa-circle-o{
+    display: none;
+}
+fieldset input[type="radio"]:checked ~ i.fa.fa-dot-circle-o{
+    color: #7AA3CC;    display: inline;
+}
+fieldset:hover input[type="radio"] ~ i.fa {
+    color: #7AA3CC;
+}
+div[data-toggle="buttons"] fieldset.active{
+    color: #7AA3CC;
+}
+div[data-toggle="buttons"] fieldset {
+    display: inline-block;
+    padding: .3em .3em;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 0em;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: top;
+    cursor: pointer;
+    background-color: none;
+    border: 0px solid #c8c8c8;
+    border-radius: 3px;
+    color: #c8c8c8;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+div[data-toggle="buttons"] fieldset:hover {
+    color: #7AA3CC;
+}
+div[data-toggle="buttons"] fieldset:active, div[data-toggle="buttons"] fieldset.active {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.fileinput-button {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+.fileinput-button input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  opacity: 0;
+  -ms-filter: 'alpha(opacity=0)';
+  font-size: 200px !important;
+  direction: ltr;
+  cursor: pointer;
+}
+/* ---- Sortable CSS ---
+   ---- http://johnny.github.io/jquery-sortable/
+*/
+body.dragging, body.dragging * {
+    cursor: move !important;
+}
+.dragged {
+    position: absolute;
+    left: 30px;
+    opacity: 0.5;
+    z-index: 2000;
+    cursor: pointer;
+}
+ol.example li.placeholder {
+    position: relative;
+    cursor: pointer !important;
+    /** More li styles **/
+}
+ol.example li.placeholder:before {
+    position: absolute;
+    cursor: pointer !important;
+    /** Define arrowhead **/
+}
+
+/* ------------------------ */
+/* For the guidelines page. */
+
+.anchor-offset:before {
+    display: block;
+    height: 100px;
+    margin-top: -100px;
+    visibility: hidden;
+}
+.btn-wrappable {
+    white-space: normal;
+    text-align: left;
+}
+.back-to-top {
+    display: inline-block;
+    clear: both;
+    background: #fff;
+    color: #333;
+    padding: 0 10px 5px;
+    margin: 0px 0 0;
+    text-shadow: none;
+    text-decoration: none;
+}
+.back-to-top:hover {
+    background: #cccccc;
+    color: #fff;
+    text-decoration: none;
+}
+.back-to-top a {
+    text-decoration: none;
+}
+td.break-all-wrapping {
+    word-break: break-all;
+    overflow-wrap: break-all;
+}
+.progress-bar.animate {
+   width: 100%;
+}
+
+.col-form-label {
+    margin-top: 5px;
+    padding-right: 0.0em;
+    padding-top: 0.0em;
+}
+/* -------------------------------------------------------- */
+/* Typeahead (jquery autocomplete)
+/* -------------------------------------------------------- */
+.ui-autocomplete {
+    z-index: 9999;
+    border: 1px solid black;
+}
+.ui-menu-item {
+    list-style: none;
+    text-align: -webkit-match-parent;
+}
+.ui-menu-item-wrapper {
+    text-align: -webkit-match-parent;
+}
+.ui-helper-hidden-accessible {
+    display: none;
+}
+
+.input-icon-align {
+    padding-right: 0px;
+    margin-right: -8px;
+}
+
+.footer {
+    position: absolute;
+    padding-top: 5px;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    font-size: 100%;
+    text-align: center;
+}
+.uh-branding-one {
+    font-family: cinzel-regular, serif;
+    font-size: 1.8em;
+    font-style: normal;
+    letter-spacing: 2.2px;
+    color: #777;
+}
+.uh-branding-two {
+    font-family: cormorant-upright-regular, cursive;
+    font-size: 1.0em;
+    font-style: normal;
+    color: #777;
+}
+
+/* Rules for icon sizes: */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; } /* Default */
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-54 { font-size: 54px; }
+.material-icons.md-60 { font-size: 60px; }
+
+.material-icons.mi-orange { color: orange; }
+.material-icons.mi-red { color: red; }
+.material-icons.mi-blue { color: blue; }
+.material-icons.mi-green { color: green; }
+.material-icons.mi-lightblue { color: lightblue; }
+.material-icons.mi-yellow { color: yellow; }
+
+.fa.fa-orange { color: orange; }
+.fa.fa-red { color: red; }
+.fa.fa-blue { color: #0275d8; }
+.fa.fa-green { color: green; }
+
+#tlink.input.form-control > a.experiment-ellipsis {
+    width: 14em;
+    display:block;    
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;    
+}
+
+#global-nav {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    height: 100px;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    -webkit-transition: height .3s, line-height .3s; /* Safari */
+    transition: height .3s, line-height .3s;
+}
+#menu-move {
+    -webkit-transition: padding-top .3s; /* Safari */
+    transition: padding-top .3s;
+}
+#responsive-seal {
+    -webkit-transition:  height .2s, width .2s;
+    transition:  height .2s, width .2s;
+}
+#move-brand {
+    -webkit-transition: left .3s, padding-left .3s, padding-top .3s; /* Safari */
+    transition: left .3s, padding-left .3s, padding-top .3s;
+}
+.remove-padding {
+    padding-top: 0px !important;
+}
+.brand-padding {
+    position: relative !important;
+    top: -35px !important;
+    left: 20px !important;
+    padding-left: 0px !important;
+    padding-top: -50px !important;
+}
+.scrolled-nav {
+    height: 35px !important;
+    line-height: 35px !important;
+}
+.scale-brand {
+    width: 50px !important;
+    height: 50px !important;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    background-color: #fff;
+    top: 60px;
+    position: fixed;
+    width: 100%
+    min-height: 70px;
+}
+.margin {
+    margin-top: 68px;
+}
+.drop-shadow {
+    transition: all .2s ease !important;
+    -webkit-transition: all .2s ease !important;
+    -moz-transition: all .2s ease !important;
+    box-shadow: 0 2px 8px 2px rgba(0,0,0,0.1) !important;
+    -webkit-box-shadow: 0 8px 8px 2px rgba(0,0,0,0.1) !important;
+    -moz-box-shadow: 0 8px 8px 2px rgba(0,0,0,0.1) !important;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.well.tnp-statusbar-well {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding: 5px 12px 5px 12px;
+    background-color: #f5f8ff;
+}
+
+.tnp-statusbar-row-top-left-item {
+    margin-top: 0px;
+    /* background-color: LightBlue; */  
+}
+.tnp-statusbar-row-bottom-left-item {
+    margin-top: 8px;
+    /* background-color: pink; */ 
+}
+.tnp-statusbar-button {
+    margin: 0px 0px 0px 0px;
+    padding: 2px 6px 0px 0px;
+    /* background-color: yellow; */
+}
+
+.modal-title.tnp-modal-title {
+    color: #BD9319;
+}
+
+/* -------------------------------------------------------- */
+/* Styles when browser width is greater than this value. */
+@media(min-width:1200px) {
+    .container {
+        width: 992px; /* Limit max width of container. */
+    }
+}
+/* -------------------------------------------------------- */
+
+/* -------------------------------------------------------- */
+/* Styles when browser width is LESS THAN than this value. */
+@media only screen and (max-width: 991px) {
+    body {
+        padding-top: 110px;
+        padding-bottom: 20px;
+    }
+    .container {
+        /* background-color: lightgreen; */
+    }    
+    #space {
+        margin-left: 0%;
+    }
+    #main {
+        width: 100%;
+    }    
+    #tlink.input.form-control > a.experiment-ellipsis {
+        width: 25em;
+    }    
+}
+/* -------------------------------------------------------- */
+
+/* -------------------------------------------------------- */
+/* Styles when browser width is LESS THAN than this value. */
+@media only screen and (max-width : 768px) {
+    body {
+        padding-top: 60px;
+        padding-bottom: 20px;
+    }
+    .container {
+        /* background-color: lightcyan; */
+    }        
+
+    .uh-branding-one {
+        font-size: 1.8em;
+    }
+    .uh-branding-two {
+        font-size: 1.0em;
+    }
+    .caret {
+        float:right;
+    }
+    
+    .nav-pills > .active > a,
+    .nav-pills > .active > a:hover,.nav-pills > li > a:hover {
+        border-radius:0px;
+        border-bottom-width: none;
+        border-bottom-style: none;
+        border-bottom-color: #B3995D;
+        padding-bottom: 10px;
+    }
+    .nav-pills > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    #submenu ul li {
+        display: block;
+        padding: 20px 0px 0px 20px;
+        text-align: left;
+        height: 50px;
+        background-color: #f3f3f3;
+    }
+    #submenu li {
+        display: block;
+        padding-top: 10px;
+        text-align: left;
+        background-color: #f3f3f3;
+    }
+    #submenu a {
+        color: black;
+        text-align: left;
+        width: 100%;
+        padding: 10px 10px 10px 20px;
+        margin: 0px;
+        text-decoration: none;
+        color: #333;
+    }
+    #submenu ul li.current {
+        background-color: aliceblue;
+        padding: 15px 15px 0px 4%;
+    }
+    #submenu {
+        background-color: #f3f3f3;
+        min-height:210px;
+    }
+    #space {
+        max-width: 100%;
+        margin-left: 0%;
+        display: block;
+    }
+    #main {
+        width: 100%;
+    }
+    #application-form {
+        padding: 10px;
+        margin: 0px;
+    }
+    #space .nav-tabs > li > a {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    
+    #tlink.input.form-control > a.experiment-ellipsis {
+        width: 21em;
+    }
+        
+    #global-nav {
+        height: 50px;
+    }
+    .brand-padding {
+        position: relative !important;
+        top: 0px !important;
+        left: 0px !important;
+        padding-left: 0px !important;
+        padding-top: -20px !important;
+    }
+    .navbar-fixed-top .navbar-brand {
+        height: 50px;
+        min-height: 50px;
+        width: 50px;
+        min-width: 50px;
+    }    
+    .navbar-fixed-top .navbar-brand  > img {
+        height: 50px;
+        min-height: 50px;
+        width: 50px;
+        min-width: 50px;
+    }    
+    .navbar-brand.uh-nav-app-name {
+        padding: 20px 0px 0px 20px;
+        margin:  0px 0px 0px 0px;
+        font-size: 22px;
+    }
+    
+}
+/* -------------------------------------------------------- */
+
+/* -------------------------------------------------------- */
+/* Styles when browser width is LESS THAN than this value. */
+@media only screen and (max-width: 480px) {
+    .container {
+        /* background-color: LightSalmon; */
+    }    
+    #tlink.input.form-control > a.experiment-ellipsis {
+        width: 14em;
+    }
+}
+/* -------------------------------------------------------- */
+
+/* -------------------------------------------------------- */
+/* Styles when browser width is LESS THAN than this value. */
+@media only screen and (max-width: 400px) {
+    .container {
+        /* background-color: pink; */
+    }    
+    #tlink.input.form-control {
+        padding-left: 0px; 
+    }
+    #tlink.input.form-control > a.experiment-ellipsis {
+        width: 10em;
+    }
+    
+    .well.tnp-statusbar-well {
+        padding: 5px 8px 5px 8px;
+        /* background-color: pink; */
+    }
+}
+/* -------------------------------------------------------- */

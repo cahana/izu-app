@@ -1,0 +1,26 @@
+<div class="panel-body" th:fragment="copy">
+    <!--<script th:replace="application-delete  :: copy"></script>
+    <script th:replace="application-edit  :: copy"></script>-->
+    <div class="table-responsive">
+        <table class="table table-hover table-condensed">
+            <thead>
+                <tr>
+                    <th class="col-xs-1">ID</th>
+                    <th class="col-xs-2">First Name</th>
+                    <th class="col-xs-2">Last Name</th>
+                    <th class="col-xs-2">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-ng-repeat="a in customers | filter: searchForCustomer" ng-cloak="true">
+                    <td>{{a.id}}</td>
+                    <td>{{a.firstName}}</td>
+                    <td>{{a.lastName}}</td>
+                    <td>{{a.email}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+

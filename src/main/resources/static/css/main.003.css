@@ -1,0 +1,614 @@
+@import url('font.001.css');
+
+/* -------------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+    overflow-y:scroll;
+}
+body {
+    padding-top: 110px;
+    background-color: white;
+}
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin-top:auto;
+}
+
+h3 {
+   color: #BD9319;
+}
+a {
+    color: #0275d8;
+    text-decoration: none;
+}
+a:hover {
+    color: #0275d8;
+    text-decoration: underline;
+}
+
+.text-nowrap {
+    white-space: nowrap;
+}
+
+.min-padding {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+br.min-padding {
+   display: block;
+   margin: 1px 0;
+}
+
+td.uh-pre {
+    white-space: pre;           /* CSS 2.0 */
+    white-space: pre-wrap;      /* CSS 2.1 */
+    white-space: pre-line;      /* CSS 3.0 */
+    white-space: -pre-wrap;     /* Opera 4-6 */
+    white-space: -o-pre-wrap;   /* Opera 7 */
+    white-space: -moz-pre-wrap; /* Mozilla */
+    white-space: -hp-pre-wrap;  /* HP Printers */
+    display: inline-block;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.navbar {
+    background-color: white;
+    /* -webkit-box-shadow: 0px 4px 10px -1px rgba(0,0,0,0.30);
+    -moz-box-shadow: 0px 4px 10px -1px rgba(0,0,0,0.30);
+    box-shadow: 0px 4px 10px -1px rgba(0,0,0,0.30); */
+}
+.navbar-fixed-top .nav {
+    padding-top: 40px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 20px;
+    background-color: white;
+}
+.navbar-fixed-top .navbar-brand {
+    padding-left: 20px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    min-height: 50px;
+    min-width: 50px;
+}
+.navbar-fixed-top .navbar-brand > img {
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+}
+.navbar-brand.uh-nav-app-name {
+    height: 30px;
+    width: auto;
+    padding-left: 15px;
+    padding-top: 20px;
+    color: #BD9319;
+    background-color: transparent;
+
+    font-family: alegreyasans-regular, opensans-regular, serif;
+    font-weight: normal;
+    font-size: 20px;
+}
+.navbar-brand.uh-nav-app-name:hover {
+    color: #b08a17;
+}
+.dropshadow {
+    text-shadow: 1px 1px 3px rgba(150, 150, 150, 1);
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+    color: #555;
+    background-color: white;
+}
+.amp {
+    font-family: alice-regular, alegreyasans-regular, opensans-regular, serif;
+    font-weight: normal;
+    font-size: 90%;
+}
+.jumbotron {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+    padding: 14px 24px;
+    font-size: 21px;
+}
+.container .jumbotron.compacted,
+.container-fluid .jumbotron.compacted {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.container .jumbotron.semi-compacted,
+.container-fluid .jumbotron.semi-compacted {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#maintab.panel {
+    border-color:  #185182;
+
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+#maintab.panel.maintab-subpanel > .panel-heading {
+    background-color: #185182;
+
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+#eligibility-tab.panel-body {
+    background-color: white;
+}
+
+#eligibility-tab.panel-body .well.well-sm {
+    background-color: #f8faff;
+    padding-top: 1.2em;
+    padding-bottom: 0.2em;
+}
+
+.nav-tabs.nav-justified > li > a {
+    color: #777;
+}
+
+.nav-tabs.nav-justified > .active > a,
+.nav-tabs.nav-justified > .active > a:focus,
+.nav-tabs.nav-justified > .active > a:hover {
+    background-color: #185182;
+    color: white;
+    border-bottom-color: #185182;
+    border-left-color: #185182;
+    border-right-color: #185182;
+}
+
+
+.panel-heading .panel-title.app-types {
+    text-align: left;
+    vertical-align: text-bottom;
+    margin-top: 6px;
+    font-weight: bold;
+}
+.lead.lead-medium {
+    font-size: 16px;
+}
+.marketing {
+    margin: 40px 0;
+}
+.marketing div p.h4 {
+    margin-bottom: 5px;
+}
+.no-margin-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+input.form-control.full-width {
+    width: 100%;
+}
+button.redify-link {
+    color: red
+}
+
+button.blueable-link {
+    color: #0275d8;
+}
+
+.glyphicon.app-color {
+    color: #337ab7;
+}
+.pinkify {
+    background-color: pink;
+}
+.orangeify {
+    background-color: orange;
+}
+.goldify {
+    background-color: gold;
+}
+.aquafy {
+    background-color: aqua;
+}
+.yellowify {
+    background-color: #ffff66;
+}
+.whiteify {
+    background-color: white;
+}
+
+.background-transparent {
+    background-color: transparent !important;
+}
+
+.panel-heading a:after {
+    color: white;
+    background-color: white;
+}
+.panel-heading a.collapsed:after {
+    color: white;
+    background-color: white;
+}
+
+.glyphicon.glyphicon-question-sign {
+    font-size: 17px;
+}
+
+.panel-title a {
+    color: white;
+    text-decoration: none;
+}
+.panel-title a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* ------------------------ */
+/* Application CSS          */
+
+#application-form {
+    width: 100%;
+    margin-top: 0px;
+    padding-bottom: 10px;
+}
+#main {
+  float: left;
+  /* margin-top: 20px;*/
+  /* margin-top: 0px; */
+  padding-top: 0px;
+  width: 100%;
+}
+#shadow {
+    margin-top: -10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color: #185182;
+}
+
+#append {
+    width: 80%;
+    padding: 2px;
+    margin: .5em;
+}
+
+.dossier-empty {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover,.nav-pills > li > a:hover {
+    text-decoration: none;
+    color: #FFF !important;
+    background-color: transparent !important;
+    border-bottom-color: #FFF;
+    -webkit-transition: border-bottom-color .5s ease;
+    -moz-transition: border-bottom-color .5s ease;
+    -o-transition: border-bottom-color .5s ease;
+    -ms-transition: border-bottom-color .5s ease;
+    transition: border-bottom-color .5s ease;
+}
+.nav-pills > li > a{
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+    border-radius:0px;
+    font-size: 1em;
+    margin: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: #fff;
+}
+.absolute-bottom {
+    position: absolute;
+    bottom: 100px;
+}
+.background-color {
+    background-color: #f2f2f2;
+}
+.table>thead>tr>th {
+    border-bottom: none;
+}
+
+/* ---- Sortable CSS ---
+   ---- http://johnny.github.io/jquery-sortable/
+*/
+body.dragging, body.dragging * {
+    cursor: move !important;
+}
+.dragged {
+    position: absolute;
+    left: 30px;
+    opacity: 0.5;
+    z-index: 2000;
+    cursor: pointer;
+}
+ol.example li.placeholder {
+    position: relative;
+    cursor: pointer !important;
+    /** More li styles **/
+}
+ol.example li.placeholder:before {
+    position: absolute;
+    cursor: pointer !important;
+    /** Define arrowhead **/
+}
+
+/* ------------------------ */
+/* For the guidelines page. */
+
+.anchor-offset:before {
+    display: block;
+    height: 100px;
+    margin-top: -100px;
+    visibility: hidden;
+}
+.btn-wrappable {
+    white-space: normal;
+    text-align: left;
+}
+.back-to-top {
+    display: inline-block;
+    clear: both;
+    background: #fff;
+    color: #333;
+    padding: 0 10px 5px;
+    margin: 0px 0 0;
+    text-shadow: none;
+    text-decoration: none;
+}
+.back-to-top:hover {
+    background: #cccccc;
+    color: #fff;
+    text-decoration: none;
+}
+.back-to-top a {
+    text-decoration: none;
+}
+
+td.break-all-wrapping {
+    word-break: break-all;
+    overflow-wrap: break-all;
+}
+
+.ellipsis {
+    width: 151px;
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.progress-bar.animate {
+   width: 100%;
+}
+
+.col-form-label {
+    padding-right: 0.0em;
+}
+/* -------------------------------------------------------- */
+/* Typeahead (jquery autocomplete)
+/* -------------------------------------------------------- */
+.ui-autocomplete {
+    z-index: 9999;
+    border: 1px solid black;
+}
+.ui-menu-item {
+    list-style: none;
+    text-align: -webkit-match-parent;
+}
+.ui-menu-item-wrapper {
+    text-align: -webkit-match-parent;
+}
+.ui-helper-hidden-accessible {
+    display: none;
+}
+
+
+.input-icon-align {
+    padding-right: 0px; 
+    margin-right: -8px;
+}
+
+.footer {
+    position: absolute;
+    padding-top: 5px;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    font-size: 100%;
+    text-align: center;
+}
+.uh-branding-one {
+    font-family: cinzel-regular, serif;
+    font-size: 1.6em;
+    font-style: normal;
+    letter-spacing: 2.2px;
+    color: #777;
+}
+.uh-branding-two {
+    font-family: cormorant-upright-regular, cursive;
+    font-size: 0.8em;
+    font-style: normal;
+    color: #777;
+}
+
+/* -------------------------------------------------------- */
+/* Styles when browser width is greater than this value. */
+@media(min-width: 1200px) {
+    .container,
+    .container-fluid {
+        width: 992px;
+        /* background-color: yellow; */
+    }
+}
+
+/* -------------------------------------------------------- */
+/* Styles when browser width is GREATER than this value. */
+@media(min-width:768px) {
+    body {
+        padding-bottom: 50px;
+    }
+    .container,
+    .container-fluid {
+        /* background-color: aqua; */
+    }
+    .bar {
+        min-height: 90px;
+        -webkit-box-shadow: 0px 4px 10px -1px rgba(0,0,0,0.30);
+        -moz-box-shadow: 0px 4px 10px -1px rgba(0,0,0,0.30);
+        box-shadow: 0px 4px 10px -1px rgba(0,0,0,0.30);
+    }
+    .navbar-fixed-top .navbar-brand > img {
+        position: inherit;
+        top: 0px;
+        left: 25px;
+        height: 90px;
+        width: 90px;
+        background-color: transparent;
+    }
+    .navbar-brand.uh-nav-app-name {
+        position: inherit;
+        top: 0px;
+        left: 115px;
+        height: 90px;
+        padding-left: 18px;
+        padding-top: 52px;
+        white-space: nowrap;
+        text-align: left;
+        font-size: 28px;
+        background-color: transparent;
+    }
+    .uh-branding-one {
+        font-size: 1.8em;
+    }
+    .uh-branding-two {
+        font-size: 1.0em;
+    }
+
+    .ellipsis {
+        width: 100%;
+    }
+}
+
+/* -------------------------------------------------------- */
+
+/* -------------------------------------------------------- */
+/* Styles when browser width is LESS THAN than this value. */
+@media(max-width:960px) {
+    .container {
+        /* background-color: lightgreen; */
+    }
+    body {
+        padding-top: 50px;
+    }
+
+    #sidebar {
+        max-width: 100%;
+        margin-top: -10px;
+    }
+    #space {
+        margin-left: 0%;
+    }
+    #main {
+        width: 100%;
+    }
+}
+/* -------------------------------------------------------- */
+
+/* -------------------------------------------------------- */
+/* Styles when browser width is LESS THAN than this value. */
+@media(max-width:768px) {
+    .container {
+        /* background-color: pink; */
+    }
+
+    body {
+        /* padding-top: 50px; */
+        padding-bottom: 50px;
+    }
+    .uh-branding-one {
+        font-size: 1.8em;
+    }
+    .uh-branding-two {
+        font-size: 1.0em;
+    }
+    .caret {
+        float:right;
+    }
+    .nav-pills > .active > a,
+    .nav-pills > .active > a:hover,.nav-pills > li > a:hover {
+        text-decoration: none;
+        border-radius:0px;
+        border-bottom-width: none;
+        border-bottom-style: none;
+        background-color: transparent !important;
+        border-bottom-color: #B3995D;
+        padding-bottom: 10px;
+
+    }
+    .nav-pills > li > a{
+        border-radius:0px;
+        font-size: 1em;
+        margin: 0px;
+        padding: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    #submenu ul li {
+        display: block;
+        padding: 20px 0px 0px 20px;
+        text-align: left;
+        height: 50px;
+        background-color: #f3f3f3;
+    }
+    #submenu li {
+        display: block;
+        padding-top: 10px;
+        text-align: left;
+        background-color: #f3f3f3;
+    }
+    #submenu a {
+        color: black;
+        text-align: left;
+        width: 100%;
+        padding: 10px 10px 10px 20px;
+        margin: 0px;
+        text-decoration: none;
+        color: #333;
+    }
+    #submenu ul li.current {
+        background-color: aliceblue;
+        padding: 15px 15px 0px 4%;
+    }
+    #submenu {
+        background-color: #f3f3f3;
+        min-height:210px;
+    }
+    #space {
+        max-width: 100%;
+        margin-left: 0%;
+        display: block;
+    }
+    #main {
+        width: 100%;
+        /* padding-top: none; */
+    }
+    #application-form {
+        padding: 10px;
+        margin: 0px;
+    }
+    #space .nav-tabs > li > a {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+}
+/* -------------------------------------------------------- */

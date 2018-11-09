@@ -1,0 +1,68 @@
+[
+  {
+    "id": 31,
+    "code": "THA",
+    "description": "Hawaii Community College",
+    "actual": "Y"
+  },
+  {
+    "id": 32,
+    "code": "THI",
+    "description": "UH Hilo",
+    "actual": "Y"
+  },
+  {
+    "id": 33,
+    "code": "THO",
+    "description": "Honolulu Community College",
+    "actual": "Y"
+  },
+  {
+    "id": 34,
+    "code": "TKA",
+    "description": "Kapiolani Community College",
+    "actual": "Y"
+  },
+  {
+    "id": 35,
+    "code": "TKU",
+    "description": "Kauai Community College",
+    "actual": "Y"
+  },
+  {
+    "id": 36,
+    "code": "TLE",
+    "description": "Leeward Community College",
+    "actual": "Y"
+  },
+  {
+    "id": 37,
+    "code": "TMA",
+    "description": "UH Manoa",
+    "actual": "Y"
+  },
+  {
+    "id": 38,
+    "code": "TMU",
+    "description": "UH Maui College",
+    "actual": "Y"
+  },
+  {
+    "id": 39,
+    "code": "TWI",
+    "description": "Windward Community College",
+    "actual": "Y"
+  },
+  {
+    "id": 40,
+    "code": "TWO",
+    "description": "UH West Oahu",
+    "actual": "Y"
+  },
+  {
+    "id": 41,
+    "code": "TSW",
+    "description": "UH System",
+    "actual": "Y"
+  }
+]

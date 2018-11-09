@@ -1,0 +1,57 @@
+<script type="text/ng-template" id="CoordinatorEditModalTemplateId"  th:fragment="copy">
+
+    <ng-form role="view" name="coordinatorEdit" id="coordinatorEdit">
+        <div class="modal-header container-fluid">
+            <div class="row">
+                <div class="col-xs-offset-1 col-xs-9">
+                    <h3><p align="center">Edit Coordinator</p></h3>
+                </div>
+                <div class="col-xs-2">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" ng-click="cancel()"><span aria-hidden="true">&times;</span></button>
+                </div>
+            </div>
+        </div>
+        <!-- model-body start -->
+        <div class="modal-body container-fluid">
+            <div class="row">
+                <div class="col-xs-offset-1 col-xs-10">
+                    <div class="form-group">
+                        <label class="control-label">Name</label>
+                        <input class="form-control" id="name" name="name" type="text" ng-model="coordinator.person.name" required="true" readonly="true"/>
+                    </div>
+                </div>
+
+                <div class="col-xs-offset-1 col-xs-10">
+                    <div class="form-group">
+                        <label class="control-label" for="role">Role</label>
+                        <select class="form-control input-md"
+                                id="role"
+                                ng-model="selectedRole"
+                                ng-change="roleChange(selectedRole)"
+                                ng-options="r.description for r in roles"></select>
+                    </div>
+                </div>
+
+                <div class="col-xs-offset-1 col-xs-10">
+                    <div class="form-group">
+                        <label class="control-label" for="office">Campus Office</label>
+                        <select class="form-control input-md" 
+                                id="office" 
+                                ng-model="selectedOffice" 
+                                ng-change="officeChange(selectedOffice)" 
+                                ng-options="o as (o.campus.description + ': ' + o.description) for o in offices"></select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- model-body end  -->
+
+        <div class="modal-footer container-fluid">
+            <div class="col-xs-offset-1 col-xs-11">
+                <button type="button" class="btn btn-primary" data-dismiss="modal" ng-click="cancel()">Cancel</button>
+                <button type="submit" class="btn btn-primary" data-dismiss="modal" id="btnSubmitModal" form="coordinatorEdit" ng-click="ok(selectedOffice, selectedRole)" ng-disabled="coordinatorEdit.$pristine || coordinatorEdit.$invalid">Save</button>
+            </div>
+        </div>
+    </ng-form>
+
+</script>
